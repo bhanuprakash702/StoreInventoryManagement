@@ -1,0 +1,36 @@
+﻿@page "/"
+@using InventoryManagement.Data.Service
+@inject BranchService objBranchService
+<h3>Branch</h3>
+
+<div>
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 form-group">
+                    <label for="BranchId">Branch Code</label>
+                    <input type="text" class="form-control" id="BranchId">
+                </div>
+
+                <div class="col-sm-3 form-group">
+                    <label for="BranchName">Branch Name</label>
+                    <input type="text" class="form-control" id="BranchName">
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="IsActive">IsActive</label>
+                    <input id="switch-1" type="checkbox" class="switch-input">
+                </div>
+                <div class="col-sm-3 form-group">
+                    <button type="submit" class="btn btn-success" onclick="@CreateBranch">Add</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div>
+   
+</div>
+
+
+
+
